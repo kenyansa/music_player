@@ -95,3 +95,19 @@ body{
     cursor: pointer;
     border: none;
 }
+/* using the span elements to create pause icon */
+.play-btn span{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 30px;
+    border-radius: 2px;
+    background: darkblue;
+    transition: 0.5s;
+}
+.play-btn span:nth-child(2){
+    left: 55%;
+    transform-origin: center;
+}

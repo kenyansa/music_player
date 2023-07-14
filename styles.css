@@ -34,3 +34,13 @@ body{
 .artist-name{
     font-size: 25px;
 }
+.disk{
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-image: url("artImages/johnRutter.jpeg");
+    background-size: cover;
+}

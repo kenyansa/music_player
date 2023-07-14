@@ -57,3 +57,17 @@ body{
     border-radius: 50%;
     background: darkblue;
 }
+.song-slider{
+    width: 100%;
+    position: relative;
+}
+.slider{
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.slider::-webkit-slider-thumb{
+    width: 10px;
+    height: 20px;background: black;
+}

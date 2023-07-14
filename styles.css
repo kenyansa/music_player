@@ -16,8 +16,9 @@ body{
     width: 350px;
     height: 550px;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.08);
-    box-shadow:pink;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow:5px 5px 5px 1px pink;
     padding: 30px;
     overflow: hidden;
+    color: aliceblue;
 }

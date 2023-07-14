@@ -78,3 +78,20 @@ body{
     position: absolute;
     right: 0;
 }
+.controls{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+.play-btn{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    /* background: darkblue; */
+    cursor: pointer;
+    border: none;
+}

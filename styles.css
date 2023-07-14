@@ -22,3 +22,15 @@ body{
     overflow: hidden;
     color: aliceblue;
 }
+.song-name, .artist-name{
+    text-align: center;
+    text-transform: capitalize;
+}
+.song-name{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.artist-name{
+    font-size: 25px;
+}

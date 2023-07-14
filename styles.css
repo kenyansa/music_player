@@ -67,7 +67,14 @@ body{
     border-radius: 10px;
     cursor: pointer;
 }
-.slider::-webkit-slider-thumb{
+/* .slider::-webkit-slider-thumb{
     width: 10px;
     height: 20px;background: black;
+} */
+.current-time{
+    font-size: 14px;
+}
+.song-duration{
+    position: absolute;
+    right: 0;
 }

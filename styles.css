@@ -45,6 +45,10 @@ body{
     background-size: cover;
     box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2);
     animation: rotate 20s linear infinite;
+    animation-play-state: paused;
+}
+.disk.play{
+    animation-play-state: running;
 }
 /* creating a hole in the disk */
 .disk::before{

@@ -10,10 +10,10 @@ const currentTime = document.querySelector(".current-time");
 const songDuration = document.querySelector(".song-duration");
 const playBtn = document.querySelector(".play-btn");
 const forwardBtn = document.querySelector(".forward-btn");
-const backwarBtn = document.querySelector("backward-btn");
+const backwardBtn = document.querySelector(".backward-btn");
 
 playBtn.addEventListener('click', ()=>{
-    if(playBtn.className.includes('pause')){
+    if(playBtn.classList.contains('pause')){
         music.pause();
     }else{
         music.play();
@@ -40,7 +40,7 @@ const setMusic = (i)=>{
             artistName.innerHTML = song.artist;
             disk.style.backgroundImage = `url('${song.cover}')`;
 
-            currentTime.innerHTML = '00.00';
+            currentTime.innerHTML = '00:00';
             //without the setTimeOut function, there will be a slight delay when setting up the music sorce and accessing its duration
             setTimeout(() => {
                 slider.max = music.duration;

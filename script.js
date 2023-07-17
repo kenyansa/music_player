@@ -83,6 +83,10 @@ const formatTime = (time)=>{
 setInterval(() => {
     slider.value = music.currentTime;
     currentTime.innerHTML = formatTime(music.currentTime);
+    //when current time = slider's max time value (when the song ends), move to the next item 
+    if(Math.floor(music.currentTime) == Math.floor(slider.max)){
+        forwardBtn.click();
+    }
 }, 500)
 
 slider.addEventListener('change', ()=>{

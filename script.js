@@ -17,18 +17,28 @@ playBtn.addEventListener('click', ()=>{
     disk.classList.toggle('play');
 })
 
-fetch('songList.json')
-    .then(response => response.json())
-    .then(data=>{
-        //checking if JSON is being loaded
-        console.log(data);
-    })
-    .catch(error => {
-        console.error('Error loading JSON file', error);
-    })
+// setting up music to be played:
+const setMusic = (i)=>{
+    slider.value = 0; //range value set to 0
+    // Fetch the JSON file and load the song data
+    fetch('songList.json')
+        .then(response => response.json())
+        .then(data=>{
+            //checking if JSON is being loaded
+            console.log(data);
+            //using the data
+            let song = data[i];
+            currentMusic = i;
+            music.src = song.path;
 
-//setting up music to be played:
-// const setMusic = (i)=>{
-//     slider.value = 0; //range value set to 0
-//     let song = songs[i]
-// }
+            songName.innerHTML = song.name;
+            artistName.innerHTML = song.artist;
+            disk.style.backgroundImage = url('${song.cover');
+        })
+        //error handling
+        .catch(error => {
+            console.error('Error loading JSON file', error);
+        })
+
+    
+}

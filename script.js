@@ -33,12 +33,11 @@ const setMusic = (i)=>{
 
             songName.innerHTML = song.name;
             artistName.innerHTML = song.artist;
-            disk.style.backgroundImage = url('${song.cover');
+            disk.style.backgroundImage = `url('${song.cover}')`;
         })
         //error handling
         .catch(error => {
             console.error('Error loading JSON file', error);
         })
-
-    
 }
+setMusic(2);

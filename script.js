@@ -89,6 +89,11 @@ slider.addEventListener('change', ()=>{
     music.currentTime =slider.value;
 })
 
+const playMusic =()=>{
+    music.play();
+    playBtn.classList.remove('pause');
+    disk.classList.add('play');
+}
 //forward and backward button functions
 forwardBtn.addEventListener('click', ()=>{
     if(currentMusic >= songData.length - 1){
@@ -97,7 +102,7 @@ forwardBtn.addEventListener('click', ()=>{
         currentMusic++;
     }
     setMusic(currentMusic);
-    playBtn.click();
+    playMusic();
 });
 
 backwardBtn.addEventListener('click', ()=>{

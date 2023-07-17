@@ -65,3 +65,8 @@ const formatTime = (time)=>{
     }
     return `${min} : ${sec}`;
 }
+//slider
+setInterval(() => {
+    slider.value = music.currentTime;
+    currentTime.innerHTML = formatTime(music.currentTime);
+}, 500);

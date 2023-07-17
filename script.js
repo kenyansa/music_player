@@ -12,3 +12,6 @@ const playBtn = document.querySelector(".play-btn");
 const forwardBtn = document.querySelector(".forward-btn");
 const backwarBtn = document.querySelector("backward-btn");
 
+playBtn.addEventListener('click', ()=>{
+    playBtn.classList.toggle('pause');
+})

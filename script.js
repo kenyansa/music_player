@@ -13,6 +13,11 @@ const forwardBtn = document.querySelector(".forward-btn");
 const backwarBtn = document.querySelector("backward-btn");
 
 playBtn.addEventListener('click', ()=>{
+    if(playBtn.className.includes('pause')){
+        music.pause();
+    }else{
+        music.play();
+    }
     playBtn.classList.toggle('pause');
     disk.classList.toggle('play');
 })
@@ -47,7 +52,7 @@ const setMusic = (i)=>{
             console.error('Error loading JSON file', error);
         })
 }
-setMusic(8);
+setMusic(9);
 //formatting the song duration to mins and seconds format
 const formatTime = (time)=>{
     let min = Math.floor(time / 60);

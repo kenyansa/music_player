@@ -21,7 +21,8 @@ These limitaitons will be addresses shortly.
 
 ## :pushpin: BDD
 You simply click the play button and the songs start playing. It is expected that the playlist should run to the very last item continuously if not paused. <br> On pressing the pause/play button, the song stops playing. <br>
-Forward and backward buttons are also working very well.
+Forward and backward buttons are also working very well. <br>
+The slider bar is also working as expected. The song jumps to the min and second and desired.
 
 ## :computer: Technologies Used
  The project used HTML, css, and Vanilla JS.

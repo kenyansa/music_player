@@ -21,6 +21,18 @@ playBtn.addEventListener('click', ()=>{
     playBtn.classList.toggle('pause');
     disk.classList.toggle('play');
 })
+//alternative code for toggle function
+// playBtn.addEventListener('click', ()=>{
+//     if(music.paused){
+//         music.play();
+//         playBtn.classList.add('paused');
+//         disk.classList.add('play');
+//     }else {
+//         music.pause();
+//         playBtn.classList.remove('pause');
+//         disk.classList.remove('play');
+//     }
+// });
 
 // setting up music to be played:
 const setMusic = (i)=>{

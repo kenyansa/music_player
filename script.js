@@ -36,9 +36,10 @@ const setMusic = (i)=>{
             disk.style.backgroundImage = `url('${song.cover}')`;
 
             currentTime.innerHTML = '00.00';
+            //without the setTimeOut function, there will be a slight delay when setting up the music sorce and accessing its duration
             setTimeout(() => {
                 slider.max = music.duration;
-                console.log(music.duration);
+                songDuration.innerHTML = formatTime(music.duration);
             }, 300);
         })
         //error handling
@@ -47,3 +48,15 @@ const setMusic = (i)=>{
         })
 }
 setMusic(2);
+//formatting the song duration to mins and seconds format
+const formatTime = (time)=>{
+    let min = Math.floor(time / 60);
+    if(min<10){
+        min = `0${min}`
+    }
+    let sec = Math.floor(time % 60);
+    if(sec < 10){
+        sec = `0${sec}`
+    }
+    return `${min} : ${sec}`;
+}

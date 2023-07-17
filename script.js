@@ -69,4 +69,8 @@ const formatTime = (time)=>{
 setInterval(() => {
     slider.value = music.currentTime;
     currentTime.innerHTML = formatTime(music.currentTime);
-}, 500);
+}, 500)
+
+slider.addEventListener('change', ()=>{
+    music.currentTime =slider.value;
+})

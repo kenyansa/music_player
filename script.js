@@ -14,4 +14,5 @@ const backwarBtn = document.querySelector("backward-btn");
 
 playBtn.addEventListener('click', ()=>{
     playBtn.classList.toggle('pause');
+    disk.classList.toggle('play');
 })

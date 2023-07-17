@@ -17,7 +17,18 @@ playBtn.addEventListener('click', ()=>{
     disk.classList.toggle('play');
 })
 
+fetch('songList.json')
+    .then(response => response.json())
+    .then(data=>{
+        //checking if JSON is being loaded
+        console.log(data);
+    })
+    .catch(error => {
+        console.error('Error loading JSON file', error);
+    })
+
 //setting up music to be played:
-const setMusic = (i)=>{
-    slider.value = 0;
-}
+// const setMusic = (i)=>{
+//     slider.value = 0; //range value set to 0
+//     let song = songs[i]
+// }

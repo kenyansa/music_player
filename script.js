@@ -74,3 +74,13 @@ setInterval(() => {
 slider.addEventListener('change', ()=>{
     music.currentTime =slider.value;
 })
+
+//forward and backward button functions
+forwardBtn.addEventListener('click', ()=>{
+    if(currentMusic <= data.length - 1){
+        currentMusic = 0;
+    }else{
+        currentMusic++;
+    }
+    setMusic(currentMusic);
+})

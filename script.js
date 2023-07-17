@@ -16,3 +16,8 @@ playBtn.addEventListener('click', ()=>{
     playBtn.classList.toggle('pause');
     disk.classList.toggle('play');
 })
+
+//setting up music to be played:
+const setMusic = (i)=>{
+    slider.value = 0;
+}

@@ -1,0 +1,62 @@
+[
+    {
+      "name": "And the Glory",
+      "path": "songs/andTheGlory.mp3",
+      "artist": "Mormon Tabernacle Choir",
+      "cover": "artImages/andtheglory.jpg"
+    },
+    {
+      "name": "By Faith",
+      "path": "songs/byFaith.mp3",
+      "artist": "Praise and Harmon Accappela",
+      "cover": "artImages/byfaith.jpg"
+    },
+    {
+      "name": "Do What is Right",
+      "path": "songs/doWhatIsRight.mp3",
+      "artist": "Mormon Tabernacle Choir",
+      "cover": "artImages/dowhatsright.jpg"
+    },
+    {
+        "name": "Holy Holy Holy",
+        "path": "songs/holyHolyHoly.mp3",
+        "artist": "Accappela Company",
+        "cover": "artImages/holyholy.jpg"
+      },
+      {
+        "name": "Lauch Out",
+        "path": "songs/launchOut.mp3",
+        "artist": "Alvin Slaughter",
+        "cover": "artImages/launch.jpg"
+      },
+      {
+        "name": "Nuhu",
+        "path": "songs/nuhu.mp3",
+        "artist": "FOC Segero",
+        "cover": "artImages/noah.jpg"
+      },
+      {
+        "name": "Our Father who Art in Heaven",
+        "path": "songs/ourFather.mp3",
+        "artist": "Don Moen",
+        "cover": "artImages/ourFather.jpg"
+      },
+      {
+        "name": "Thank You",
+        "path": "songs/thankYou.mp3",
+        "artist": "Ray Boltz",
+        "cover": "artImages/thankyou.jpeg"
+      },
+      {
+        "name": "This is my Father's World",
+        "path": "songs/thisMyFathersWorld.mp3",
+        "artist": "Beautiful Singers",
+        "cover": "artImages/fathersworld.jpg"
+      },
+      {
+        "name": "You Raise Me Up",
+        "path": "songs/youRaiseMeUp.mp3",
+        "artist": "Celtic Woman",
+        "cover": "artImages/raisemeup.jpg"
+      }
+    ]

@@ -47,7 +47,7 @@ const setMusic = (i)=>{
             console.error('Error loading JSON file', error);
         })
 }
-setMusic(2);
+setMusic(8);
 //formatting the song duration to mins and seconds format
 const formatTime = (time)=>{
     let min = Math.floor(time / 60);

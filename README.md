@@ -16,7 +16,7 @@ The app does not need any installations to work.
 <br>
 1. The display of total time for each song sometimes doesn't display correctly.<br>
 The NaN is sometimes displayed because in development, the duration property of the HTMLAudioElement represents the length of the audio in seconds. However, it may take some time for the audio to load and for the duration to be available. Trying to access it immediately after setting the src of the music element, it might still be undefined, resulting in NaN<br>
-2. The toggle functionality for play and pause (icons) is yet to be improved
+2. The toggle functionality for play and pause (icons) is yet to be improved <br>
 3. Sometimes, you have to click twice for the song to start playing.<br>
 These limitaitons will be addressed shortly.
 

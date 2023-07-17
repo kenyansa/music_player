@@ -47,12 +47,18 @@ const setMusic = (i)=>{
     disk.style.backgroundImage = `url('${song.cover}')`;
 
     currentTime.innerHTML = '00:00';
-    //without the setTimeOut function, there will be a slight delay when setting up the music sorce and accessing its duration
-    setTimeout(() => {
+    //without the setTimeOut function, there will be a slight delay when setting up the music source and accessing its duration
+    // setTimeout(() => {
+    //     slider.max = music.duration;
+    //     songDuration.innerHTML = formatTime(music.duration);
+    // }, 300);
+
+    //listening for 'loadedmetadata' event on the music element which is fired when the duration and other metadata of the audio have been loaded.
+    music.addEventListener('loadedmetadata', ()=>{
         slider.max = music.duration;
         songDuration.innerHTML = formatTime(music.duration);
-    }, 300);
-}
+    });
+};
 // Fetch the JSON file and load the song data
 fetch('songList.json')
     .then(response => response.json())

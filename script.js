@@ -34,6 +34,12 @@ const setMusic = (i)=>{
             songName.innerHTML = song.name;
             artistName.innerHTML = song.artist;
             disk.style.backgroundImage = `url('${song.cover}')`;
+
+            currentTime.innerHTML = '00.00';
+            setTimeout(() => {
+                slider.max = music.duration;
+                console.log(music.duration);
+            }, 300);
         })
         //error handling
         .catch(error => {
